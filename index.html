@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Rex Runner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-color: #f7f7f7;
+        }
+
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+
+        .ball {
+            position: absolute;
+            bottom: 5px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: #555;
+            border-radius: 50%;
+        }
+
+        .obstacle {
+            position: absolute;
+            bottom: 5px;
+            right: -50px;
+            width: 20px;
+            height: 50px;
+            background-color: #0a0;
+        }
+
+        .ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #666;
+        }
+
+        .score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container" id="game">
+        <div class="score" id="score">Score: 0</div>
+        <div class="ball" id="ball"></div>
+        <div class="obstacle" id="obstacle"></div>
+        <div class="ground"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
